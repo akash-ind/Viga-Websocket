@@ -8,7 +8,7 @@
     <title>Vigaet</title>
     <link rel = "stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" crossorigin="anonymous">
     <link rel = "stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="{% static 'notification/app.css' %}">
+    <link rel="stylesheet" type="text/css" href="{% static 'notification/app.css' %}">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js" crossorigin="anonymous"></script>
 </head>
@@ -47,7 +47,7 @@
     <script type="text/javascript">
     // socket creating
         const socket = new WebSocket(
-            'ws://'+window.location.host+'/notify/'
+            'wss://'+window.location.host+'/notify/'
             )
     // finished
         socket.addEventListener('message', (event)=>{
