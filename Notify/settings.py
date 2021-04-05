@@ -26,7 +26,7 @@ SECRET_KEY = '29a=q5w8qi&1sv7za$!^0c1$j7(z$*-divdv(3qwpx%5=$s+17'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ["*"]
 
 ASGI_APPLICATION = "Notify.asgi.application"
 # Application definition
