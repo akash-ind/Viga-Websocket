@@ -1,1 +1,1 @@
-web: daphne Notify.asgi
+web: daphne Notify.asgi:application
